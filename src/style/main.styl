@@ -1,0 +1,151 @@
+@import nib
+
+/* VARIABLES AND FUNCTIONS */
+
+first = #056598
+second = #ef3600
+third = #efae00
+
+white = #fff
+black = #000
+offwhite = #F0F0EE
+
+midnight =  #202020
+purple = rgb(144, 35, 117)
+pink = pink
+
+gray(amount)
+  hsl(0,0,amount + '%')
+
+// responsive breakpoints (following bootstrap breakpoints)
+screen-sm-min = 768px
+screen-md-min = 992px
+screen-lg-min = 1200px
+screen-xl-min = 2304px // retina
+
+// Using the given class prefix, generates 4 different classes for 6 different sizes
+// of the given properties
+//
+//  e.g. sizes(pad, padding) generates:
+//
+//  .pad-xs { padding: 7px; }
+//  .pad-sm { padding: 15px; }
+//  .pad-md { padding: 25px; }
+//  .pad-lg { padding: 50px; }
+//  .pad-xl { padding: 100px; }
+//  .pad-xxl { padding: 200px; }
+
+sizes(classPrefix, props...)
+  sizeValues = -xs 7px,
+             -sm 15px,
+             -md 25px,
+             -lg 50px,
+             -xl 100px,
+             -xxl 200px
+  for pair in sizeValues
+    .{classPrefix}{pair[0]}
+      for prop in props
+        {prop} pair[1]
+
+sizes(pad, padding)
+sizes(space, margin)
+sizes(vpad, padding-top, padding-bottom)
+sizes(vspace, margin-top, margin-bottom)
+sizes(space-above, margin-top)
+sizes(space-below, margin-bottom)
+sizes(space-left,  margin-left)
+sizes(space-right, margin-right)
+
+/* DEFAULTS */
+*
+  box-sizing border-box
+
+img
+  max-width 100%
+
+body
+  color gray(25)
+  background-color Ivory
+  font-family Lato, Helvetica, Arial
+  font-size 20px
+
+a, a:hover
+  color=second
+  color color
+
+  @media (min-width: screen-md-min)
+    &:hover
+      text-decoration none
+      color lighten(color, 15%)
+      outline-color lighten(color, 15%)
+      border-bottom solid 2px white
+
+h1
+  margin-top 50px
+h2
+  margin-top 40px
+h3
+  margin-top 20px
+h4
+  margin-bottom 5px
+
+p, ul
+  line-height 1.7
+  margin-bottom 1.2em
+
+strike
+  opacity 0.7
+
+/* UTILITY */
+
+.clearfix:after
+  content ""
+  display table
+  clear both
+
+.circle
+  border-radius 999px
+
+.left
+  float left
+
+.container
+  margin 0 auto
+  padding 20px
+
+.container-xs
+  max-width 450px
+.container-sm
+  max-width 750px
+.container-md
+  max-width 980px
+.container-lg
+  max-width 1200px
+.container-xl
+  max-width 1440px
+
+.container-content
+  margin-top 80px
+  margin-bottom 80px
+
+/* APP */
+
+.theme-dark
+  color white
+  background-color second
+
+.theme-dark2
+  color white
+  background-color midnight
+
+.title
+  margin-top 0
+  padding-top 40px
+  margin-bottom 10px
+
+.subtitle
+  font-weight normal
+  margin-top 10px
+
+.avatar
+  width 450px

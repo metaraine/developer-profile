@@ -1,5 +1,6 @@
 var $ = require('jquery')
 var template20 = require('template20')
+var prop = require('lodash.property')
 
 var repos = [
   'binpath',
@@ -26,15 +27,14 @@ var repos = [
   'x-to-y'
 ]
 
-// create a function that returns the value of the pre-supplied key of the object given at runtime
-function prop(key) {
-  return function (obj) {
-    return obj[key]
-  }
-}
-
 $(function () {
 
+  // populate
+  $.get('https://api.github.com/repos/tjunnone/npm-check-updates')
+    .then(prop('stargazers_count'))
+    .then(console.log.bind(console))
+
+  // populate other repos
   repos.forEach(function (reponame) {
 
     // clone and populate a new table row

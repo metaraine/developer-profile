@@ -26,7 +26,7 @@ var config = {
   srcViews: 'src/*.jade',
   destViews: 'public',
   srcScripts: 'src/script/**/*.js',
-  srcAppScript: 'src/script/app.js',
+  srcAppScript: 'src/script/index.js',
   destScripts: 'public/script',
   destBundle: 'bundle.js'
 }

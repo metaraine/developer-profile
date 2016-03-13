@@ -4,6 +4,7 @@
   "description": "Professional profile for Raine Revere",
   "repo": "http://github.com/metaraine/developer-profile",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "gulp"
   },
@@ -13,6 +14,7 @@
     "add-commas": "0.0.4",
     "browserify": "^12.0.1",
     "event-stream": "^3.3.2",
+    "express": "^4.13.4",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",

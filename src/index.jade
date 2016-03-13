@@ -26,33 +26,50 @@ body
     .container.container-md: .container-content
       h1 Featured Work
       
-      h2 PayPal in Times Square
+      .space-below-xl.clearfix
+        h2 PayPal in Times Square
 
-      a(href='images/times-square-boards.jpg' target='_blank')
-        img.media-left.left(src='images/times-square-boards-thumb.jpg' width='530')
+        .clearfix
+          a(href='images/times-square-boards.jpg' target='_blank')
+            img.media-left.left(src='images/times-square-boards-thumb.jpg' width='530')
 
-      p In June 2015, I was comissioned to build an application that would render photos of people in real-time onto 3 skyscraper-sized screens in Times Square. As part of PayPal's "New Money" advertising campaign, photo booths were placed in Times Square where people could get their picture taken and moments later see themselves appear on the screens for thousands to see. I built a Node app that sync'd photos from the photobooth via DropBox, composited them onto an animated currency video using FFMPEG, and simultaneously broadcast a slideshow to multiple screens via Web Sockets. 
+          p In May 2015, I was comissioned to build an application that would render photos of people in real-time onto 3 skyscraper-sized screens in Times Square. As part of PayPal's "New Money" advertising campaign, photo booths were placed in Times Square where people could get their picture taken and moments later see themselves appear on the screens for thousands to see. I built a Node app that sync'd photos from the photobooth via DropBox, composited them onto an animated currency video using FFMPEG, and simultaneously broadcast a slideshow to multiple endpoints via Web Sockets. 
 
-      .space-above-xl.clearfix
-        a(href='images/times-square-raine.jpg' target='_blank')
-          img.right.media-right(src='images/times-square-raine-thumb.jpg' height='300')
+        p.text-justify.space-below-lg The multi-million dollar project was completed in under 2 months and was successfully released on July 20, 2015 celebrating PayPal's IPO on NASDAQ.
 
-        p The multi-million dollar project had to be completed in under 2 months and required a flawless execution on the day celebrating PayPal going public on NASDAQ.
-      
-      h2 RefactorU Web Development Bootcamp
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur minus dolorum sapiente ullam impedit expedita repudiandae. Nesciunt eligendi quod iure libero. Quidem reprehenderit facilis, doloremque dignissimos perspiciatis commodi reiciendis?
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deserunt aspernatur ut vitae assumenda, quaerat rerum, qui recusandae dicta laudantium voluptatibus porro rem sapiente animi nostrum autem adipisci earum quisquam.
+        .text-center
+          a(href='images/times-square-ipo.jpg' target='_blank')
+            img.media-full.media-center(src='images/times-square-ipo.jpg' height='185')
+
+          a(href='images/times-square-boards2.jpg' target='_blank')
+            img.media-full.media-center(src='images/times-square-boards2.jpg' height='185')
+
+          a(href='images/times-square-raine.jpg' target='_blank')
+            img.media-full.media-center(src='images/times-square-raine.jpg' height='185')
+
+      .space-below-xl
+        h2 RefactorU Web Development Bootcamp
+
+        img.media-left.left(src='images/refactoru.png')
+
+        p RefactorU is a web development bootcamp that trains people in modern web technologies, helping them to become full-stack Javascript developers and acquire the skills to work in the industry as junior developer in just 10 weeks. I developed the original curriculum and served as lead instructor for RefactorU for two years.
+
+        p I led the effort of designing a transformative learning experience that included lectures, hands-on coding, team projects, and a unique peer support system. Students today continue to learn and grow from the collaborative educational infrastructure that I helped put in place.
 
   section#open-source.clearfix
     .container.container-md: .container-content
       h1 Open Source Contributions
-      p I am actively involved in Open Source development. He has authored and contributed to numerous libraries.
+      p I am actively involved in Open Source development. I have authored and contributed to numerous libraries.
 
       h2 Featured Contributions
 
       a(href='https://github.com/tjunnone/npm-check-updates' target='_blank') npm-check-updates
 
-      p npm-check-updates is used by 
+      p npm-check-updates is a command-line tool that allows you to upgrade your package.json or bower.json dependencies to the latest versions, regardless of existing version constraints. Since becoming the sole maintainer, I have added features, responded to issues, and maintained the project over several years, helping it grow from 300 to <span id="ncu-stars">over 1,400</span> stars on github.
+
+      a(href='https://github.com/metaraine/generator-yoga' target='_blank') yoga
+
+      p yoga is a prompt-driven scaffolding system that makes it easier to create and maintain personal boilerplates that evolve over time. It is built as an extension to yeoman, with a unique, prompt-driven templating and file-copying system that requires no custom generator code.
 
       h2 Other Contributions
 
@@ -85,7 +102,7 @@ body
   
   section#contact.theme-dark2.clearfix
     .container.container-md: .container-content
-      h1 Contact
+      h1 Thanks for visiting! :)
       table
         tr
           th github

@@ -1,8 +1,8 @@
 {
-  "name": "metaraine.com",
+  "name": "rainetech",
   "version": "1.0.0",
-  "description": "Personal website for Raine Revere",
-  "repo": "http://github.com/metaraine/metaraine.com",
+  "description": "Professional profile for Raine Revere",
+  "repo": "http://github.com/metaraine/developer-profile",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "gulp"
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "add-commas": "0.0.4",
     "browserify": "^12.0.1",
     "event-stream": "^3.3.2",
     "gulp": "^3.9.0",
@@ -26,6 +27,7 @@
     "gulp-stylus": "^2.1.1",
     "gulp-uglify": "^1.5.1",
     "jquery": "^2.1.4",
+    "lodash.flow": "^3.2.1",
     "lodash.property": "^3.1.2",
     "nib": "^1.1.0",
     "template20": "^1.0.0",

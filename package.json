@@ -1,7 +1,7 @@
 {
   "name": "raine.tech",
   "version": "1.0.0",
-  "description": "Professional profile for Raine Revere",
+  "description": "Professional profile for contemplative developer Raine Rupert Revere.",
   "repo": "http://github.com/raineorshine/raine.tech",
   "scripts": {
     "start": "node app.js",

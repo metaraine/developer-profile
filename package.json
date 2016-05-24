@@ -1,8 +1,8 @@
 {
-  "name": "rainetech",
+  "name": "raine.tech",
   "version": "1.0.0",
   "description": "Professional profile for Raine Revere",
-  "repo": "http://github.com/metaraine/developer-profile",
+  "repo": "http://github.com/raineorshine/raine.tech",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",

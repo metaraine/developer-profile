@@ -4,6 +4,8 @@ var prop = require('lodash.property')
 var flow = require('lodash.flow')
 var addCommas = require('add-commas')
 
+var githubUsername = 'raineorshine'
+
 var repos = [
   'binpath',
   'cint',
@@ -55,8 +57,8 @@ $(function () {
     // clone and populate a new table row
     var row = template20('repo-row', {
       name: reponame,
-      url: 'https://github.com/metaraine/' + reponame,
-      description: $.get('https://api.github.com/repos/metaraine/' + reponame)
+      url: 'https://github.com/' + githubUsername + '/' + reponame,
+      description: $.get('https://api.github.com/repos/' + githubUsername + '/' + reponame)
         .then(flow(prop('description'), endSentence))
     })
 

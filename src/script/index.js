@@ -10,8 +10,9 @@ var githubUsername = 'raineorshine'
 var ethRepos = [
   'solgraph',
   'solidity-repl',
-  'generate-contract-factory',
+  'eth-debug-lines',
   'generate-contract-interface',
+  'generate-contract-factory',
   'eth-new-contract',
   'wait-transaction',
   'solidity-sha3'

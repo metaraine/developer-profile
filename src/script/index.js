@@ -31,6 +31,7 @@ var otherRepos = [
   'plural-parens',
   'prefixnote',
   'promise-guard',
+  'satz',
   'shackles',
   'spacedoutcss',
   'spawn-please',
